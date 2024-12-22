@@ -191,7 +191,13 @@ function main {
             git_clone
         else
             git_pull
+        fi        
+
+        if [ $repo == "build" ]; then
+        echo "build do not reset,because it has local patch!"        
+        continue
         fi
+        
         # 复现git_version.txt中的所有仓库
         if [ $REPRODUCE -eq 1 ]; then
             item=$(basename ${repo})

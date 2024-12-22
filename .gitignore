@@ -1,4 +1,4 @@
-build
+# build
 freertos
 fsbl
 host-tools
@@ -22,4 +22,4 @@ install
 tdl_sdk
 ive
 cvi_rtsp
-
+.vscode
